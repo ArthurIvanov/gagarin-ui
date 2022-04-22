@@ -1,0 +1,32 @@
+import * as React from 'react';
+import { storiesOf } from '@storybook/react';
+import { GlobalStyles } from '@atlantum/react';
+import { Card } from '@atlantum/react';
+import { Select } from '@atlantum/react';
+import '../stories.styles.css';
+
+const DefaultSelect = () => {
+    return (
+        <>
+            <GlobalStyles />
+            <div className="atlantum-compact">
+                <Card size={'standard'}>
+                    <Select
+                        input
+                        label={'Sample label'}
+                        alert={'Alert validation as additional text'}
+                        name={'select'}
+                        type={'text'}
+                        placeholder={'Please select and option'}
+                    >
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                    </Select>
+                </Card>
+            </div>
+        </>
+    );
+};
+
+storiesOf('Components/Select', module).add('Default', () => <DefaultSelect />);

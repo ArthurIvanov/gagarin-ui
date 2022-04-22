@@ -1,0 +1,39 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "rootDir": ".",
+        "module": "commonJs",
+        "target": "es5",
+        "outDir": "dist",
+        "moduleResolution": "node",
+        "lib": ["dom", "esnext"],
+        "jsx": "react",
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "composite": true,
+        "incremental": true,
+        "declaration": true,
+        "declarationMap": true,
+        "sourceMap": true,
+        "downlevelIteration": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "paths": {
+            "@gagarin-ui/*": ["packages/*", "utils/*"]
+        }
+    },
+    "files": [],
+    "references": [
+        {
+            "path": "packages/react"
+        },
+        {
+            "path": "utils/story"
+        }
+    ],
+    "exclude": ["node_modules", "lib", "__tests__", "**/*.test*", "**/*.spec*"]
+}
